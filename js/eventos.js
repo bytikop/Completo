@@ -1,7 +1,8 @@
 var empiezaApp = function()
 {
 	var Entrar = function()
-	{
+	{ 
+		console.log("2");
 		var usuario = $("#txtUsuario").val();
 		var clave   = $("#txtClave").val();
 		var parametros ="opc=validaEntrada"+
@@ -27,7 +28,8 @@ var empiezaApp = function()
 					alert("Usuario o contraseña incorrectos");
 				}
 			},
-			error: function(xhr,ajaxOptions,throws){
+			error: function(xhr,ajaxOptions,throws)
+			{
 				console.log("Error de conexión");
 			}
 		});
